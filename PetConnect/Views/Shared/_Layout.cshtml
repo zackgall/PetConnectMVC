@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <!--left panel!-->
+                <h2>PetConnect</h2>
+                <img src="http://i.imgur.com/eibls1Kl.jpg" alt="ProfilePic" width="150px" height="150px" style="border-radius:15px">
+                <p><strong>Greek Cheeks</strong><br>AngryConure</p>
+
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section0"><h4>CHIRP</h4></a></li>
+                    <li><a href="#section1">Edit Buddies</a></li>
+                    <li><a href="#section2">Chirp Filter</a></li>
+                    <li><a href="#section3">My Chirps</a></li>
+                    <li><a href="#section3">Public Chirps</a></li>
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Chirps">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                @RenderBody()
+                <hr />
+            </div>
+            </div>
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - PetConnect</p>
+                </footer>
+            </div>
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+</body>
+</html>

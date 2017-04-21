@@ -1,0 +1,75 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+  /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+
+        img {
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+    body{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    textarea#chirpbox{
+    	    margin: 10px ;
+    	    -webkit-box-shadow: none ;
+       		 box-shadow: none  ;
+       		 border-color: none;
+       		 height: 70px ;
+           resize: none ;
+    }
+    .list-group-item {
+    border-left: 0 none;
+      border-right: 0 none;
+        border-bottom: 0 none;
+}
